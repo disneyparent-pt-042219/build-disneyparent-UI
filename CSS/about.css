@@ -287,6 +287,7 @@ table {
 }
 .about-container {
   max-width: 80%;
+  height: auto;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -308,30 +309,12 @@ table {
   flex-wrap: wrap;
   margin: 0 auto;
 }
-.box1 {
-  max-width: 60%;
+.demo-pics {
+  display: block;
+  max-width: 230px;
+  max-height: 230px;
+  width: auto;
   height: auto;
-  border: 3px solid black;
-}
-.demo-pic-1 {
-  height: auto;
-  max-width: 40%;
-}
-.demo-pic-2 {
-  height: auto;
-  max-width: 60%;
-}
-.demo-pic-3 {
-  height: auto;
-  max-width: 60%;
-}
-.demo-pic-4 {
-  height: auto;
-  max-width: 40%;
-}
-.demo-pic-5 {
-  height: auto;
-  max-width: 60%;
 }
 .footer-container {
   display: flex;
