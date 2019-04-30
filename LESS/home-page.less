@@ -1,0 +1,122 @@
+.big-container {
+  background-color: silver;
+}
+
+.picture-container {
+  width: 80%;
+  margin: 0 auto;
+  .disney-park {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+}
+
+.text-container {
+  max-width: 50%;
+  height: auto;
+  margin: 0 auto;
+  // margin-top: 25px;
+  // margin-bottom: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  @media @mobile {
+    max-width: 80%;
+    border: 1px solid black;
+    text-align: center;
+  }
+
+  .welcome-header {
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .welcome-text {
+    font-size: 18px;
+    margin-top: 25px;
+    line-height: 1.5;
+    font-family: 'Lora', serif;
+    @media @mobile {
+      margin-top: 25px;
+    }
+  }
+}
+
+//DEMO
+.main-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  margin: 0 auto;
+  // width: 80%;
+  // justify-content: space-around
+  // flex-direction: column;
+  @media @mobile {
+    width: 80%;
+  }
+}
+
+// .example {
+//   width: 200px;
+//   height: 200px;
+// }
+
+.pic {
+  height: auto;
+  width: 100%;
+  // display: block;
+  // max-width:230px;
+  // max-height:95px;
+  // width: auto;
+  // height: auto;
+}
+
+.img-wrap {
+  position: relative;
+  cursor: pointer;
+  // max-height: 100%;
+  height: auto;
+  width: 100%;
+  @media @mobile {
+    width: 100%;
+  }
+}
+
+.pic-layer {
+  // max-width: 40%;
+  // min-width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(36, 62, 206, 0.6);
+  color: @white;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+.img-wrap:hover .pic-layer {
+  visibility: visible;
+  opacity: 1;
+}
+
+.pic-description {
+  transition: .2s;
+  transform: translateY(1em)
+}
+
+.img-wrap:hover .pic-description {
+  transform: translateY(0);
+}
