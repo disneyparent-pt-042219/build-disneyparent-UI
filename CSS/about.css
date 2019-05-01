@@ -337,12 +337,25 @@ table {
   flex-wrap: wrap;
   margin: 0 auto;
 }
+.pic-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
 .demo-pics {
   display: flex;
+  align-content: center;
   max-width: 230px;
   max-height: 230px;
   width: auto;
   height: auto;
+}
+.dev-role {
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(36, 62, 206, 0.6);
+  text-align: center;
+  margin-top: 5px;
 }
 .footer-container {
   display: flex;
@@ -352,7 +365,7 @@ table {
   margin: 0 auto;
   margin-top: 25px;
   height: 200px;
-  border-top: 3px solid dodgerblue;
+  border-top: 3px solid rgba(36, 62, 206, 0.6);
 }
 .footer-container .footer-contact {
   display: flex;
