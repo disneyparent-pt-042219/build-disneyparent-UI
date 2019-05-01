@@ -3,12 +3,18 @@
 }
 
 .picture-container {
-  width: 80%;
+  max-width: 80%;
   margin: 0 auto;
+  .flex-jcc;
   .disney-park {
-    max-width: 100%;
+    max-width: 80%;
+    max-height: 350px;
     height: auto;
     overflow: hidden;
+    @media @mobile {
+      height: 200px;
+      width: 100%;
+    }
   }
 }
 
@@ -16,8 +22,6 @@
   max-width: 50%;
   height: auto;
   margin: 0 auto;
-  // margin-top: 25px;
-  // margin-bottom: 25px;
   margin-top: 25px;
   margin-bottom: 25px;
   display: flex;
@@ -33,9 +37,14 @@
 
   .welcome-header {
     font-size: 36px;
+    color: rgba(36, 62, 206, 0.6);
+    font-weight: bold;
     font-family: 'Montserrat', sans-serif;
   }
   .welcome-text {
+    color: rgba(36, 62, 206, 0.6);
+    font-weight: bold;
+    padding: 15px;
     font-size: 18px;
     margin-top: 25px;
     line-height: 1.5;
@@ -49,37 +58,22 @@
 //DEMO
 .main-container {
   width: 50%;
-  display: flex;
-  justify-content: center;
+  .flex-jcc;
   flex-flow: wrap;
   margin: 0 auto;
-  // width: 80%;
-  // justify-content: space-around
-  // flex-direction: column;
   @media @mobile {
     width: 80%;
   }
 }
 
-// .example {
-//   width: 200px;
-//   height: 200px;
-// }
-
 .pic {
   height: auto;
   width: 100%;
-  // display: block;
-  // max-width:230px;
-  // max-height:95px;
-  // width: auto;
-  // height: auto;
 }
 
 .img-wrap {
   position: relative;
   cursor: pointer;
-  // max-height: 100%;
   height: auto;
   width: 100%;
   @media @mobile {
@@ -88,14 +82,11 @@
 }
 
 .pic-layer {
-  // max-width: 40%;
-  // min-width: 40%;
-  display: flex;
   align-items: center;
-  justify-content: center;
+  .flex-jcc;
   position: absolute;
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 36px;
   top: 0;
   bottom: 0;
   left: 0;
@@ -105,6 +96,9 @@
   visibility: hidden;
   opacity: 0;
   transition: opacity .2s, visibility .2s;
+  @media @mobile {
+    font-size: 18px;
+  }
 }
 
 .img-wrap:hover .pic-layer {
