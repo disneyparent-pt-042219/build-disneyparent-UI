@@ -1,5 +1,5 @@
 .big-container {
-  background-color: silver;
+  background-color: @white;
 }
 
 .picture-container {
@@ -19,7 +19,7 @@
 }
 
 .text-container {
-  max-width: 50%;
+  max-width: 80%;
   height: auto;
   margin: 0 auto;
   margin-top: 25px;
@@ -28,10 +28,10 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  border: 1px solid black;
+  border-bottom: 1px solid rgba(36, 62, 206, 0.6);;
   @media @mobile {
     max-width: 80%;
-    border: 1px solid black;
+    border: 1px solid rgba(36, 62, 206, 0.6);;
     text-align: center;
   }
 
@@ -52,6 +52,12 @@
     @media @mobile {
       margin-top: 25px;
     }
+  }
+  .welcome-text-bottom {
+    color: rgba(36, 62, 206, 0.6);
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
   }
 }
 
