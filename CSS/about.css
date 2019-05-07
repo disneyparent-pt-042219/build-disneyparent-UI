@@ -259,7 +259,7 @@ table {
 }
 @media (max-width: 500px) {
   .text-container .welcome-text-bottom {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 .main-container {
